@@ -1,0 +1,39 @@
+{
+  "name": "node_vue_seller",
+  "version": "1.0.0",
+  "description": "Express back-end Vue front-end MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon prod-server/server.js",
+    "build": "set NODE_ENV=production && babel dev-server --out-dir prod-server",
+    "dev": "concurrently \"set NODE_ENV=development\" \"babel dev-server --out-dir prod-server --watch\" \"nodemon prod-server/server.js\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "node_vue_seller"
+  ],
+  "author": "SSS",
+  "license": "UNLICENSED",
+  "homepage": "",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "mongojs": "^3.1.0",
+    "mongoose": "^5.7.13",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^5.0.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
